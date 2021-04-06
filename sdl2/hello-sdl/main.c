@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <mods/sx/sx.h>
-#include <mods/sdl2/SDL/include/SDL.h>
+#include <flux-mods/sx/sx.h>
+#include <flux-mods/sdl2/SDL/include/SDL.h>
 
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
