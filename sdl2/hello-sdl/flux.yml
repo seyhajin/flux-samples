@@ -1,0 +1,10 @@
+---
+build: app
+type: window
+about: Hello SDL, a simple SDL application
+name: hello-sdl
+author: Christophe TES
+inputs:
+  - <flux-mods/sx.flux>
+  - <flux-mods/sdl2.flux>
+  - main.c

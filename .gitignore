@@ -1,0 +1,6 @@
+# system
+.DS_Store
+desktop.ini
+
+# flux
+*flux-proj*

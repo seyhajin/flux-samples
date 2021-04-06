@@ -1,0 +1,10 @@
+---
+build: app
+type: window
+about: Hello Raylib, a simple Raylib application
+name: standard_game
+author: Christophe TES
+inputs:
+  - <flux-mods/raylib.flux>
+  - standard_game.c
+  - screens/*.c

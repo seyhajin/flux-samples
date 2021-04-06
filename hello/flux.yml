@@ -1,0 +1,16 @@
+---
+build: app
+type: console
+about: Hello world, a simple console application for flux project
+name: hello
+author: Christophe TES
+inputs:
+  # assets
+  # copy all files from '$proj_dir/assets' to '$out_dir/assets'
+  - assets/@/assets
+  
+  # module dependencies
+  - <flux-mods/hello.flux>
+
+  # sources
+  - main.c
