@@ -1,0 +1,16 @@
+---
+build: app
+about: Core basic window on web platform
+name: core_basic_window_web
+author: Ramon Santamaria (raylib), Christophe TES
+options:
+  cc: !opts
+    - !?emscripten -s ASYNCIFY -s FORCE_FILESYSTEM=1 -s USE_GLFW=3
+  cxx: !opts
+    - !?emscripten -s ASYNCIFY -s FORCE_FILESYSTEM=1 -s USE_GLFW=3
+  ld: !opts
+    - !?emscripten -s ASYNCIFY -s FORCE_FILESYSTEM=1 --shell-file ${FLUX_WORKSPACE_DIR}/flux-mods/raylib/raylib/src/shell.html -s USE_GLFW=3
+inputs:
+  - wasm-server.py@/            # in project output dir, launch server with 'python wasm-server.py'
+  - <flux-mods/raylib.flux>
+  - core_basic_window_web.c
