@@ -1,0 +1,16 @@
+---
+build: app
+about: Simple 2D quadtree
+name: quadtree
+author: Christophe TES
+options:
+  cc: !opts
+    - !?emscripten -s ASYNCIFY -s FORCE_FILESYSTEM=1 -s USE_GLFW=3
+  cxx: !opts
+    - !?emscripten -s ASYNCIFY -s FORCE_FILESYSTEM=1 -s USE_GLFW=3
+  ld: !opts
+    - !?emscripten -s ASYNCIFY -s FORCE_FILESYSTEM=1 -s USE_GLFW=3 --shell-file ${FLUX_WORKSPACE_DIR}/flux-mods/raylib/raylib/src/shell.html
+inputs:
+  - wasm-server.py@/            # in project output dir, launch server with 'python wasm-server.py'
+  - <flux-mods/raylib.flux>
+  - quadtree.c
