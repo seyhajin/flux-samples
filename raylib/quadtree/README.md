@@ -1,5 +1,6 @@
 # raylib: simple 2d quadtree
 
+![quadtree](quadtree.png)
 ## Building for desktop
 
 from *flux workspace dir*:
