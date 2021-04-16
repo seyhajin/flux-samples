@@ -11,6 +11,6 @@ options:
   ld: !opts
     - !?emscripten -s ASYNCIFY -s FORCE_FILESYSTEM=1 --shell-file ${FLUX_WORKSPACE_DIR}/flux-mods/raylib/raylib/src/shell.html -s USE_GLFW=3
 inputs:
-  - wasm-server.py@/            # in project output dir, launch server with 'python wasm-server.py'
+  - !?emscripten wasm-server.py@/            # in project output dir, launch server with 'python wasm-server.py'
   - <flux-mods/raylib.flux>
   - core_basic_window_web.c
