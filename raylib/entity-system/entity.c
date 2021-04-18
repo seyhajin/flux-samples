@@ -448,7 +448,7 @@ void UpdateDrawFrame(void)
     //--------------------------------------
     BeginDrawing();
 
-        ClearBackground(RAYWHITE);
+        ClearBackground(WHITE);
 
         BeginMode3D(camera);
             DrawEntityModel(center, cube, RED);
