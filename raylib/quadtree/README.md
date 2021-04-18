@@ -1,5 +1,7 @@
 # raylib: simple 2d quadtree
 
+online demo: https://seyhajin.itch.io/simple-2d-quadtree
+
 ![quadtree](quadtree.png)
 ## Building for desktop
 
