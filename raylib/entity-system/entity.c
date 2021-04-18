@@ -448,7 +448,7 @@ void UpdateDrawFrame(void)
     //--------------------------------------
     BeginDrawing();
 
-        ClearBackground(CLITERAL(Color){240,240,240,255});
+        ClearBackground(RAYWHITE);
 
         BeginMode3D(camera);
             DrawEntityModel(center, cube, RED);
