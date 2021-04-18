@@ -2,6 +2,7 @@
 
 online demo: https://seyhajin.itch.io/simple-entity-system
 
+![entity-system](entity-system.png)
 ## Building for desktop
 
 from *flux workspace dir*:
