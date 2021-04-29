@@ -5,7 +5,7 @@
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
 
-int sx_main(void) {
+int sx_main(int argc, char* argv[]) {
     SDL_Window *window = NULL;
     SDL_Surface *surface = NULL;
 
